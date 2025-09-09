@@ -1,16 +1,174 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Element Type Identification</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .element-demo {
+      margin-bottom: 25px;
+      padding: 15px;
+      background: #f9f9f9;
+      border-left: 4px solid #007bff;
+      border-radius: 5px;
+    }
+
+    .element-name {
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .test-container {
+      background: white;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+
+    .answer {
+      font-weight: bold;
+      color: #28a745;
+      margin-top: 10px;
+    }
+
+    /* Highlight elements to show their behavior */
+    button, div, span, p, input, cite, code, h1, sup, sub {
+      background-color: #e3f2fd;
+      border: 1px solid #2196f3;
+      padding: 2px 4px;
+      margin: 2px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="container">
+    <h1>HTML Element Type Identification</h1>
 
+    <!-- Button Element -->
+    <div class="element-demo">
+      <div class="element-name">Button Element:</div>
+      <div class="test-container">
+        <button data-ns-test="block-inline-button">Test1</button>
+        <button data-ns-test="block-inline-button">Test2</button>
+        <div class="answer">Answer: Inline</div>
+      </div>
+    </div>
+
+    <!-- Div Element -->
+    <div class="element-demo">
+      <div class="element-name">Div Element:</div>
+      <div class="test-container">
+        <div data-ns-test="block-inline-div">Test1</div>
+        <div data-ns-test="block-inline-div">Test2</div>
+        <div class="answer">Answer: Block</div>
+      </div>
+    </div>
+
+    <!-- Span Element -->
+    <div class="element-demo">
+      <div class="element-name">Span Element:</div>
+      <div class="test-container">
+        <span data-ns-test="block-inline-span">Test1</span>
+        <span data-ns-test="block-inline-span">Test2</span>
+        <div class="answer">Answer: Inline</div>
+      </div>
+    </div>
+
+    <!-- P Element -->
+    <div class="element-demo">
+      <div class="element-name">P Element:</div>
+      <div class="test-container">
+        <p data-ns-test="block-inline-p">Test1</p>
+        <p data-ns-test="block-inline-p">Test2</p>
+        <div class="answer">Answer: Block</div>
+      </div>
+    </div>
+
+    <!-- Input Element -->
+    <div class="element-demo">
+      <div class="element-name">Input Element:</div>
+      <div class="test-container">
+        <input data-ns-test="block-inline-input" value="Test1">
+        <input data-ns-test="block-inline-input" value="Test2">
+        <div class="answer">Answer: Inline</div>
+      </div>
+    </div>
+
+    <!-- Cite Element -->
+    <div class="element-demo">
+      <div class="element-name">Cite Element:</div>
+      <div class="test-container">
+        <cite data-ns-test="block-inline-cite">Test1</cite>
+        <cite data-ns-test="block-inline-cite">Test2</cite>
+        <div class="answer">Answer: Inline</div>
+      </div>
+    </div>
+
+    <!-- Code Element -->
+    <div class="element-demo">
+      <div class="element-name">Code Element:</div>
+      <div class="test-container">
+        <code data-ns-test="block-inline-code">Test1</code>
+        <code data-ns-test="block-inline-code">Test2</code>
+        <div class="answer">Answer: Inline</div>
+      </div>
+    </div>
+
+    <!-- H1 Element -->
+    <div class="element-demo">
+      <div class="element-name">H1 Element:</div>
+      <div class="test-container">
+        <h1 data-ns-test="block-inline-h1">Test1</h1>
+        <h1 data-ns-test="block-inline-h1">Test2</h1>
+        <div class="answer">Answer: Block</div>
+      </div>
+    </div>
+
+    <!-- Sup Element -->
+    <div class="element-demo">
+      <div class="element-name">Sup Element:</div>
+      <div class="test-container">
+        <sup data-ns-test="block-inline-sup">Test1</sup>
+        <sup data-ns-test="block-inline-sup">Test2</sup>
+        <div class="answer">Answer: Inline</div>
+      </div>
+    </div>
+
+    <!-- Sub Element -->
+    <div class="element-demo">
+      <div class="element-name">Sub Element:</div>
+      <div class="test-container">
+        <sub data-ns-test="block-inline-sub">Test1</sub>
+        <sub data-ns-test="block-inline-sub">Test2</sub>
+        <div class="answer">Answer: Inline</div>
+      </div>
+    </div>
+
+  </div>
 </body>
-
 </html>
